@@ -27,4 +27,5 @@ a proxy will will basically hide your ip from the API,
 the reason for doing that with this is to proctect you from getting IP banned from an API,
 with some ApI's; making too many requests from one IP will get that IP flagged, suspended or banned
 
-![090720_0532_WhatisanAPI1](https://user-images.githubusercontent.com/74530156/126858667-865a35ef-cf1f-4b08-862e-9b4c6a0469a5.png)
+ ![proxy-flow](https://user-images.githubusercontent.com/74530156/126858812-a31cd260-cba2-44a2-bf2d-416b4ef604e4.png)
+
