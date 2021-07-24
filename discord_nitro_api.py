@@ -4,6 +4,7 @@ import time
 import os
 import random
 import threading
+import string
 from colorama import Fore
 
 green = Fore.GREEN
@@ -65,96 +66,16 @@ def auto():
 
     
     for i in range(amount):
-        RP = proxy_list
-        RP = random.choice(RP)
+        RP = random.choice(proxy_list)
         proxies = {
             f"https://": f"{RP}"
-            }
-        base_link = "https://www.discord.gift/"
-        check_base_link1 = "https://discord.com/api/v9/entitlements/gift-codes/"
-        check_base_link2 = "?with_application=true&with_subscription_plan=true"
+        }
+        chars = string.ascii_letters + string.digits
+        code = ""
+        
+        for i in range(16):
+            code = code + random.choice(chars)
 
-        p1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p2 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p3 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p4 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p5 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p6 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p7 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p8 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-        p9 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p10 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p11 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p12 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p13 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p14 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p15 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p16 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
-                    "A", "B", "C", "D", "E", "F", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "x", "y", "Z",
-                    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-
-        p1 = random.choice(p1)
-        p2 = random.choice(p2)
-        p3 = random.choice(p3)
-        p4 = random.choice(p4)
-        p5 = random.choice(p5)
-        p6 = random.choice(p6)
-        p7 = random.choice(p7)
-        p8 = random.choice(p8)
-        p9 = random.choice(p9)
-        p10 = random.choice(p10)
-        p11 = random.choice(p11)
-        p12 = random.choice(p12)
-        p13 = random.choice(p13)
-        p14 = random.choice(p14)
-        p15 = random.choice(p15)
-        p16 = random.choice(p16)
-
-        code = base_link + p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9 + p10 + p11 + p12 + p13 + p14 + p15 + p16
         url = f'https://discord.com/api/v9/entitlements/gift-codes/{code}?with_application=true&with_subscription_plan=true'
 
         r = requests.get(url, proxies=proxies)
