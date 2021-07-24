@@ -22,8 +22,7 @@ Be sure to add more proxies becuase the ones i added was for testing so i didnt 
 
 
 # how it works
-The scipt will randomly select letters and numbers and compile(put all the random characters together) the char
-acters into a 16 character code, 
+The scipt will randomly select letters and numbers and compile(put all the random characters together) the characters into a 16 character code, 
 after it does that it will take that code and send it to Discord's API(Application programming interface)
 
 what an API is:   
