@@ -1,6 +1,18 @@
 # Discord-Nitro-API.py
 Just a basic nitro gen made with python
 
+# the language this was programed in:
+Python![download (1)](https://user-images.githubusercontent.com/74530156/126858953-b4268995-9a42-4401-9daa-306649361da2.png)
+
+
+# used moodules
+requests
+random
+colorama
+json
+time
+os
+
 If you have python installed already you can just download the source and run it
 If you dont have python installed, install it or the .pyc version
 
@@ -27,5 +39,7 @@ a proxy will will basically hide your ip from the API,
 the reason for doing that with this is to proctect you from getting IP banned from an API,
 with some ApI's; making too many requests from one IP will get that IP flagged, suspended or banned
 
- ![proxy-flow](https://user-images.githubusercontent.com/74530156/126858812-a31cd260-cba2-44a2-bf2d-416b4ef604e4.png)
+![proxy-flow](https://user-images.githubusercontent.com/74530156/126858812-a31cd260-cba2-44a2-bf2d-416b4ef604e4.png)
+ 
+if you want to create an AI algorithm for this it would increase the chance of getting a valid code but overall by itself the odds are stacked against you and there's math to back it up
 
