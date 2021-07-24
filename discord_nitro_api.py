@@ -51,3 +51,4 @@ def auto():
             print(f"{white} invalid code{red} {code} {white}")
         
 auto()
+
