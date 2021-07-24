@@ -5,12 +5,12 @@ Just a basic nitro gen made with python
 Python
 
 # used moodules
-requests
-random
-colorama
-json
-time
-os
+requests, /n
+random,  /n
+colorama, /n
+json, /n
+time, /n
+os, /n
 
 If you have python installed already you can just download the source and run it
 If you dont have python installed, install it or the .pyc version
