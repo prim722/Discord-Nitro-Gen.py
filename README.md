@@ -3,9 +3,6 @@ Just a basic nitro gen made with python
 
 # the language this was programed in:
 Python
-![download](https://user-images.githubusercontent.com/74530156/126858967-5ccc1d48-ad09-432d-8210-7f7e9a89c87b.jpg)
-
-
 
 # used moodules
 requests
