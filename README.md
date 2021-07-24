@@ -2,7 +2,9 @@
 Just a basic nitro gen made with python
 
 # the language this was programed in:
-Python![download (1)](https://user-images.githubusercontent.com/74530156/126858953-b4268995-9a42-4401-9daa-306649361da2.png)
+Python
+![download](https://user-images.githubusercontent.com/74530156/126858967-5ccc1d48-ad09-432d-8210-7f7e9a89c87b.jpg)
+
 
 
 # used moodules
