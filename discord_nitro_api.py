@@ -19,7 +19,7 @@ lmag = Fore.LIGHTMAGENTA_EX
 os.system("title Nitro Gen/home")
 os.system("mode 75, 15")
 
-def menu():
+def banner():
     print(f"""
     {lmag}███╗   ██╗██╗████████╗██████╗  ████{white}██╗   ██████╗ ███████╗███╗   ██╗
     {lmag}████╗  ██║██║╚══██╔══╝██╔══██╗██╔═══█{white}█╗ ██╔════╝ ██╔════╝████╗  ██║
@@ -86,5 +86,5 @@ def auto():
         else:
             print(f"{white} invalid code{red} {code} {white}")
         
-menu()
+banner()
 auto()
