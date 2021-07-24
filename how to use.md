@@ -19,5 +19,12 @@ IT will only work if you have python installed
 
 # running/use
 
+![image](https://user-images.githubusercontent.com/74530156/126859814-5a83e705-cca9-4213-9708-80fe4094c72e.png)
 
+![image](https://user-images.githubusercontent.com/74530156/126859836-005dbc79-e848-4c44-908c-be6401275207.png)
 
+after entering an amount it should begin generating codes
+
+![image](https://user-images.githubusercontent.com/74530156/126859846-d1396260-9f5f-445d-ae72-9d7a03b53d75.png)
+
+when a valid code comes in it will appear green
