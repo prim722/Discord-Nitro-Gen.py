@@ -28,3 +28,16 @@ after entering an amount it should begin generating codes
 ![image](https://user-images.githubusercontent.com/74530156/126859846-d1396260-9f5f-445d-ae72-9d7a03b53d75.png)
 
 when a valid code comes in it will appear green
+
+# alt use(no install required)
+using a web IDE providede by https://replit.com/
+
+you can use the script as well as seeing the code behind it and you dont have to insatll anything
+
+![image](https://user-images.githubusercontent.com/74530156/126859936-c666bc89-4e3a-409d-bd1f-a482a09dd0cf.png)
+
+![image](https://user-images.githubusercontent.com/74530156/126859952-c06749bc-2156-47ab-ac15-b60fc49f2682.png)
+
+![image](https://user-images.githubusercontent.com/74530156/126859961-59746649-e4c3-42e5-a26f-4b2a15395887.png)
+
+just enter a number and it will spit out codes
