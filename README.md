@@ -1,4 +1,4 @@
-# Discord-Nitro-API.py
+# Discord-Nitro-GEN.py
 Just a basic nitro gen made with python
 
 # the language this was programed in:
