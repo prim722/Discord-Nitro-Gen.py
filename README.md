@@ -38,6 +38,9 @@ the reason for doing that with this is to proctect you from getting IP banned fr
 with some ApI's; making too many requests from one IP will get that IP flagged, suspended or banned
 
 ![proxy-flow](https://user-images.githubusercontent.com/74530156/126858812-a31cd260-cba2-44a2-bf2d-416b4ef604e4.png)
+
+proxy vs VPN:
+ https://www.google.com/search?q=proxy+vs+vpn
  
 if you want to create an AI algorithm for this it would increase the chance of getting a valid code but overall by itself the odds are stacked against you and there's math to back it up
 
